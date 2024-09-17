@@ -2,72 +2,45 @@
 <html>
 
 <head>
-  <title>登录页面</title>
-
-
-
   <style>
-   .center {
-      text-align: center;
+  .box {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
     }
   </style>
-
-
-
-
-  
-
-
-
-
-
 </head>
 
 <body>
-
-  <h2>登录</h2>
-
-  <form id="loginForm">
-    <label for="username">用户名：</label><br>
-    <input type="text" id="username"><br>
-    <label for="password">密码：</label><br>
-    <input type="password" id="password"><br><br>
-    <input type="button" value="登录" onclick="login()">
-  </form>
-
-  <script>
-    function login() {
-      var username = document.getElementById("username").value;
-      var password = document.getElementById("password").value;
-
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', 'login.php', true);
-      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          if (xhr.responseText === "success") {
-            alert("登录成功！");
-          } else {
-            alert("用户名或密码错误，请重新输入！");
-          }
-        }
-      };
-
-      xhr.send('username=' + username + '&password=' + password);
-    }
-  </script>
-<a href="abmmtzyu.apk " download>下载 apk</a>
-
-
-
-
-<a href="puu.html">体验</a>
-<a 
-
-<p class="center">Hello world</p>
+  <div class="box"></div>
 </body>
 
 </html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+  .box {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>
+
 
 
 
