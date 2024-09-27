@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>页面布局</title>
+  <title>Artist</title>
   <style>
     body {
       margin: 0;
@@ -19,35 +19,40 @@
 
   .black-box {
       background-color: black;
-    }
+  }
 
-  .gray-box {
-      background-color: gray;
-    }
-
-   .button {
+  .button {
       padding: 10px 20px;
-      color: lightBlack;
+      color: lightblack;
       background-color: white;
       border: none;
       cursor: pointer;
+    }
+
+  .button-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      height: 100%;
     }
   </style>
 </head>
 
 <body>
   <div class="box black-box">
-    <button class="button" onclick="window.location.href='page2.html'">About us</button>
-    <button class="button" onclick="window.location.href='page3.html'">Download</button>
-    <button class="button" onclick="window.location.href='page4.html'">Art</button>
+    <div class="button-container">
+      <button class="button" onclick="window.location.href='page2.html'">Art</button>
+      <button class="button" onclick="window.location.href='page3.html'">Download</button>
+      <button class="button" onclick="window.location.href='page4.html'">About me</button>
+    </div>
   </div>
-  <div class="box gray-box"></div>
-  <div class="box gray-box"></div>
-  <div class="box gray-box"></div>
+  <div class="box white-box"></div>
   <div class="box black-box"></div>
 </body>
 
 </html>
+
+
 
 
 
